@@ -117,13 +117,14 @@ body {
 
 .hero-right {
     width: 430px;
-    background: #e8e8e8 url('images/background-road.jpg') no-repeat bottom center;
+    background: #e8e8e8 url('images/1000454703.jpg') no-repeat bottom center;
     background-size: cover;
     border: 1px solid #b5b5b5;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
     position: relative;
     padding: 0;
 }
+
 
 .form-header {
     display: flex;
