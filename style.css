@@ -117,7 +117,8 @@ body {
 
 .hero-right {
     width: 430px;
-    background: #e8e8e8 linear-gradient(to bottom, #f4f4f4 0%, #d8d8d8 100%);
+    background: #e8e8e8 url('images/background-road.jpg') no-repeat bottom center;
+    background-size: cover;
     border: 1px solid #b5b5b5;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
     position: relative;
@@ -187,7 +188,7 @@ body {
 .confidential-stamp {
     position: absolute;
     right: 8px;
-    top: -2px;
+    top: 20px;
     width: 135px;
     transform: rotate(8deg);
     z-index: 10;
@@ -275,7 +276,7 @@ body {
     padding: 3px 8px;
 }
 
-/* --- MIDDLE 3-COLUMN SECTION (Fixed Icon Sizes & Original Proportions) --- */
+/* --- MIDDLE 3-COLUMN SECTION --- */
 .middle-features {
     display: flex;
     justify-content: space-between;
@@ -334,7 +335,6 @@ body {
     margin-bottom: 6px;
 }
 
-/* Increased Clipboard Image Size to Match Original */
 .col-1 .feature-img {
     width: 82px;
     height: auto;
@@ -371,7 +371,6 @@ body {
     line-height: 1.25;
 }
 
-/* Increased Laptop & Gavel/Book Image Sizes to Match Original */
 .col-2 .sub-img {
     width: 95px;
     height: auto;
@@ -393,7 +392,6 @@ body {
     margin-bottom: 8px;
 }
 
-/* Restored Full Size for Certificates Badges in Middle Column */
 .col-3 .badges-row img {
     height: 72px;
     width: auto;
@@ -560,9 +558,13 @@ body {
     margin: 12px 0;
 }
 
-/* Scaled up the right sidebar badges to match original template proportions */
 .side-badge {
     width: 105px;
+}
+
+.social-block {
+    text-align: right;
+    margin-top: 15px;
 }
 
 .social-block h3 {
@@ -577,10 +579,11 @@ body {
 
 .social-icons {
     display: flex;
+    justify-content: flex-end;
     gap: 4px;
 }
 
 .social-icons img {
     width: 22px;
     height: 22px;
-    }
+}
