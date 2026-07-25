@@ -115,7 +115,6 @@ body {
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.25);
 }
 
-/* --- FIXED HERO RIGHT FORM BOX (Matching Green Reference) --- */
 .hero-right {
     width: 430px;
     background: #e8e8e8 linear-gradient(to bottom, #f4f4f4 0%, #d8d8d8 100%);
@@ -276,7 +275,7 @@ body {
     padding: 3px 8px;
 }
 
-/* --- MIDDLE 3-COLUMN SECTION --- */
+/* --- MIDDLE 3-COLUMN SECTION (Fixed Icon Sizes & Original Proportions) --- */
 .middle-features {
     display: flex;
     justify-content: space-between;
@@ -320,7 +319,7 @@ body {
 .col-1 .col-content {
     display: flex;
     align-items: flex-start;
-    gap: 8px;
+    gap: 10px;
     margin-bottom: 8px;
 }
 
@@ -335,8 +334,9 @@ body {
     margin-bottom: 6px;
 }
 
+/* Increased Clipboard Image Size to Match Original */
 .col-1 .feature-img {
-    width: 65px;
+    width: 82px;
     height: auto;
     object-fit: contain;
 }
@@ -351,6 +351,7 @@ body {
     justify-content: space-between;
     align-items: center;
     padding-bottom: 6px;
+    gap: 8px;
 }
 
 .col-2 .border-top-dash {
@@ -361,7 +362,6 @@ body {
 
 .col-2 .text-side {
     flex: 1;
-    padding-right: 6px;
 }
 
 .col-2 p {
@@ -371,8 +371,9 @@ body {
     line-height: 1.25;
 }
 
+/* Increased Laptop & Gavel/Book Image Sizes to Match Original */
 .col-2 .sub-img {
-    width: 75px;
+    width: 95px;
     height: auto;
     object-fit: contain;
 }
@@ -388,12 +389,13 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 10px;
+    gap: 12px;
     margin-bottom: 8px;
 }
 
+/* Restored Full Size for Certificates Badges in Middle Column */
 .col-3 .badges-row img {
-    height: 60px;
+    height: 72px;
     width: auto;
 }
 
@@ -558,8 +560,9 @@ body {
     margin: 12px 0;
 }
 
+/* Scaled up the right sidebar badges to match original template proportions */
 .side-badge {
-    width: 85px;
+    width: 105px;
 }
 
 .social-block h3 {
@@ -580,4 +583,4 @@ body {
 .social-icons img {
     width: 22px;
     height: 22px;
-}
+    }
