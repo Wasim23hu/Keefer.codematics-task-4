@@ -2,7 +2,7 @@ body {
     margin: 0;
     font-family: Arial, sans-serif;
     background-color: #e6e6e6;
-    overflow-x: hidden; /* Horizontal scroll ko khatam karne ke liye */
+    overflow-x: hidden;
 }
 
 .wrapper {
@@ -17,16 +17,15 @@ body {
 /* Header Styles */
 header {
     background: #ffffff;
-    padding: 15px 20px;
+    padding: 10px 15px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     box-sizing: border-box;
-    flex-wrap: wrap;
 }
 .logo-area img {
-    max-height: 50px;
-    max-width: 100%;
+    max-height: 40px;
+    width: auto;
 }
 .header-right {
     text-align: right;
@@ -35,16 +34,16 @@ header {
     display: block;
     color: #b50000;
     font-weight: bold;
-    font-size: 14px;
+    font-size: 11px;
 }
 .phone-number {
     display: block;
-    font-size: 28px;
+    font-size: 20px;
     font-weight: bold;
     color: #111;
 }
 .sub-phone {
-    font-size: 11px;
+    font-size: 9px;
     color: #555;
 }
 
@@ -58,18 +57,19 @@ nav ul {
     margin: 0;
     padding: 0;
     display: flex;
-    flex-wrap: wrap;
+    overflow-x: auto;
 }
 nav ul li {
     border-right: 1px solid #770000;
+    white-space: nowrap;
 }
 nav ul li a {
     display: block;
-    padding: 10px 15px;
+    padding: 8px 12px;
     color: white;
     text-decoration: none;
     font-weight: bold;
-    font-size: 13px;
+    font-size: 11px;
 }
 nav ul li a:hover, nav ul li a.active {
     background: #660000;
@@ -79,111 +79,102 @@ nav ul li a:hover, nav ul li a.active {
 .top-banners {
     display: flex;
     justify-content: space-between;
-    padding: 15px;
+    padding: 10px;
     background: #fff;
     box-sizing: border-box;
-    flex-wrap: wrap;
-    gap: 15px;
+    gap: 10px;
 }
 .banner-left, .banner-right {
     width: 48%;
     box-sizing: border-box;
 }
-@media (max-width: 768px) {
-    .banner-left, .banner-right {
-        width: 100%;
-    }
-}
 .banner-left img {
     width: 100%;
     height: auto;
+    display: block;
 }
 .banner-right {
     background: #f4f4f4;
     border: 1px solid #ddd;
-    padding: 10px;
+    padding: 8px;
 }
 .banner-right h3 {
-    font-size: 14px;
+    font-size: 12px;
     color: #990000;
-    margin: 0 0 5px 0;
+    margin: 0 0 3px 0;
 }
 .banner-right h3 span {
     color: #333;
 }
 .banner-right p {
-    font-size: 11px;
+    font-size: 10px;
     color: #555;
-    margin-bottom: 8px;
+    margin-bottom: 5px;
 }
 .banner-right label {
     display: block;
-    font-size: 10px;
+    font-size: 9px;
     font-weight: bold;
-    margin-bottom: 3px;
+    margin-bottom: 2px;
     color: #333;
 }
 .banner-right input, .banner-right textarea {
     width: 100%;
-    margin-bottom: 5px;
-    padding: 4px;
+    margin-bottom: 4px;
+    padding: 3px;
     border: 1px solid #ccc;
     box-sizing: border-box;
+    font-size: 10px;
 }
 .banner-right textarea {
-    height: 40px;
+    height: 30px;
 }
 .submit-btn {
     background: #990000;
     color: white;
     border: none;
-    padding: 6px 12px;
+    padding: 4px 8px;
     font-weight: bold;
     cursor: pointer;
-    font-size: 11px;
+    font-size: 10px;
 }
 
 /* Middle Boxes */
 .middle-boxes {
     display: flex;
     justify-content: space-between;
-    padding: 0 15px 15px 15px;
+    padding: 0 10px 10px 10px;
     box-sizing: border-box;
-    flex-wrap: wrap;
     gap: 10px;
 }
 .box-col {
     width: 32%;
     background: #f9f9f9;
     border: 1px solid #ddd;
-    padding: 10px;
+    padding: 8px;
     box-sizing: border-box;
-}
-@media (max-width: 768px) {
-    .box-col {
-        width: 100%;
-    }
 }
 .box-col h4 {
     color: #990000;
-    font-size: 13px;
-    margin: 0 0 5px 0;
+    font-size: 11px;
+    margin: 0 0 3px 0;
 }
 .box-col h5 {
-    font-size: 11px;
+    font-size: 10px;
     color: #333;
-    margin: 0 0 5px 0;
+    margin: 0 0 3px 0;
 }
 .box-col p {
-    font-size: 11px;
+    font-size: 10px;
     color: #565656;
+    margin: 0 0 5px 0;
 }
 .btn-red {
     background: #990000;
     color: white;
-    padding: 3px 8px;
+    padding: 2px 6px;
     text-decoration: none;
-    font-size: 10px;
+    font-size: 9px;
     font-weight: bold;
     display: inline-block;
 }
@@ -192,10 +183,9 @@ nav ul li a:hover, nav ul li a.active {
 .main-body-content {
     display: flex;
     justify-content: space-between;
-    padding: 0 15px 20px 15px;
+    padding: 0 10px 15px 10px;
     box-sizing: border-box;
-    flex-wrap: wrap;
-    gap: 15px;
+    gap: 10px;
 }
 .left-sidebar {
     width: 24%;
@@ -203,31 +193,25 @@ nav ul li a:hover, nav ul li a.active {
 }
 .center-content {
     width: 48%;
-    padding: 0 10px;
+    padding: 0 5px;
     box-sizing: border-box;
 }
 .right-sidebar {
     width: 24%;
     box-sizing: border-box;
 }
-@media (max-width: 768px) {
-    .left-sidebar, .center-content, .right-sidebar {
-        width: 100%;
-        padding: 0;
-    }
-}
 
 .left-sidebar h3 {
     background: #333;
     color: white;
-    padding: 8px;
-    font-size: 13px;
+    padding: 6px;
+    font-size: 11px;
     margin: 0;
 }
 .left-sidebar ul {
     list-style: none;
     padding: 0;
-    margin: 0 0 15px 0;
+    margin: 0 0 10px 0;
 }
 .left-sidebar ul li {
     background: #666;
@@ -236,39 +220,40 @@ nav ul li a:hover, nav ul li a.active {
 .left-sidebar ul li a {
     color: white;
     text-decoration: none;
-    font-size: 11px;
+    font-size: 10px;
     display: block;
-    padding: 8px;
+    padding: 6px;
 }
 .arr {
     float: right;
-    font-size: 9px;
+    font-size: 8px;
     color: #ffcccc;
 }
 .learn-about-box h4 {
-    font-size: 12px;
+    font-size: 11px;
     color: #990000;
+    margin: 5px 0;
 }
 .menu-box-text {
     border: 2px dashed #ccc;
     text-align: center;
-    padding: 20px;
+    padding: 15px;
     color: #999;
     font-weight: bold;
-    font-size: 14px;
+    font-size: 12px;
 }
 
 /* Center Content */
 .center-content h1 {
-    font-size: 16px;
+    font-size: 14px;
     color: #333;
     border-bottom: 1px solid #ccc;
-    padding-bottom: 5px;
+    padding-bottom: 3px;
     margin-top: 0;
 }
 .center-content p {
-    font-size: 12px;
-    line-height: 1.5;
+    font-size: 11px;
+    line-height: 1.4;
     color: #444;
 }
 
@@ -276,27 +261,28 @@ nav ul li a:hover, nav ul li a.active {
 .side-widget {
     background: #f9f9f9;
     border: 1px solid #ddd;
-    padding: 10px;
-    margin-bottom: 10px;
+    padding: 8px;
+    margin-bottom: 8px;
     text-align: center;
 }
 .side-widget h4 {
-    font-size: 12px;
+    font-size: 11px;
     color: #990000;
-    margin: 0 0 5px 0;
+    margin: 0 0 3px 0;
 }
 .side-widget p {
-    font-size: 10px;
+    font-size: 9px;
     color: #666;
-    margin-bottom: 8px;
+    margin-bottom: 5px;
 }
 .social-follow {
     text-align: center;
-    padding: 10px;
+    padding: 5px;
 }
 .social-follow h4 {
-    font-size: 12px;
+    font-size: 11px;
     color: #333;
+    margin-bottom: 5px;
 }
 
 /* Footer */
@@ -304,6 +290,20 @@ footer {
     background: #111;
     color: #fff;
     text-align: center;
-    padding: 10px;
-    font-size: 11px;
+    padding: 8px;
+    font-size: 10px;
+}
+
+/* Responsive Media Query for Mobile Screens */
+@media (max-width: 768px) {
+    .top-banners, .middle-boxes, .main-body-content {
+        flex-direction: column;
+    }
+    .banner-left, .banner-right, .box-col, .left-sidebar, .center-content, .right-sidebar {
+        width: 100% !important;
+        margin-bottom: 10px;
+    }
+    .center-content {
+        padding: 0;
+    }
 }
