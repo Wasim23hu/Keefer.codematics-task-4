@@ -1,5 +1,5 @@
 
- {
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -11,30 +11,26 @@ body {
     display: flex;
     justify-content: center;
     padding: 20px 0;
-    overflow-x: hidden;
 }
 
 .site-wrapper {
     width: 960px;
-    max-width: 100%;
     background-color: #ffffff;
     box-shadow: 0 0 12px rgba(0, 0, 0, 0.4);
     border: 1px solid #aaa;
     padding: 12px 15px 25px 15px;
 }
 
-/* --- 2. HEADER --- */
+/* --- HEADER --- */
 .header {
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
     padding: 5px 0 15px 0;
-    flex-wrap: wrap;
 }
 
 .main-logo {
     height: 72px;
-    max-width: 100%;
     object-fit: contain;
 }
 
@@ -72,7 +68,7 @@ body {
     font-size: 0.78rem;
 }
 
-/* --- 3. NAVIGATION BAR --- */
+/* --- NAVIGATION BAR --- */
 .navbar {
     background: linear-gradient(to bottom, #8a0000 0%, #5d0000 100%);
     border-top: 1px solid #a00000;
@@ -85,7 +81,6 @@ body {
 .nav-links {
     display: flex;
     list-style: none;
-    flex-wrap: wrap;
 }
 
 .nav-links li a {
@@ -103,18 +98,16 @@ body {
     background: linear-gradient(to bottom, #500000 0%, #300000 100%);
 }
 
-/* --- 4. HERO SECTION --- */
+/* --- HERO SECTION --- */
 .hero-section {
     display: flex;
     justify-content: space-between;
     margin-top: 15px;
     gap: 15px;
-    flex-wrap: wrap;
 }
 
 .hero-left {
     width: 485px;
-    max-width: 100%;
 }
 
 .hero-banner-img {
@@ -124,10 +117,9 @@ body {
     border: 1px solid #777;
     box-shadow: 2px 2px 5px rgba(0,0,0,0.25);
 }
+
 .hero-right {
-   .hero-right {
     width: 430px;
-    max-width: 100%;
     background: linear-gradient(rgba(245, 245, 245, 0.85), rgba(220, 220, 220, 0.85)), url('form_bg.jpg');
     background-size: cover;
     background-position: center;
@@ -135,6 +127,7 @@ body {
     box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
     position: relative;
 }
+
 .form-header {
     display: flex;
     align-items: center;
@@ -220,7 +213,6 @@ body {
 
 .form-row input {
     width: 135px;
-    max-width: 100%;
     padding: 2px 5px;
     border: 1px solid #999;
     background-color: #fff;
@@ -275,18 +267,16 @@ body {
     padding: 3px 8px;
 }
 
-/* --- 5. MIDDLE 3-COLUMN SECTION --- */
+/* --- MIDDLE 3-COLUMN SECTION --- */
 .middle-features {
     display: flex;
     justify-content: space-between;
     margin-top: 18px;
     gap: 15px;
-    flex-wrap: wrap;
 }
 
 .feature-col {
     flex: 1;
-    min-width: 250px;
     padding: 0 8px;
 }
 
@@ -424,17 +414,15 @@ body {
     display: block;
 }
 
-/* --- 6. MAIN BODY WITH SIDEBARS --- */
+/* --- MAIN BODY WITH SIDEBARS --- */
 .main-body {
     display: flex;
     justify-content: space-between;
     gap: 15px;
-    flex-wrap: wrap;
 }
 
 .sidebar-left {
     width: 195px;
-    max-width: 100%;
 }
 
 .side-title {
@@ -507,7 +495,6 @@ body {
 
 .content-center {
     flex: 1;
-    min-width: 250px;
     padding: 0 5px;
 }
 
@@ -528,7 +515,6 @@ body {
 
 .sidebar-right {
     width: 175px;
-    max-width: 100%;
 }
 
 .right-block {
@@ -548,9 +534,9 @@ body {
 }
 
 .right-block p {
+    Nmargin: 2px 0 5px 0;
     font-size: 0.68rem;
     color: #555;
-    margin: 2px 0 5px 0;
     line-height: 1.2;
 }
 
@@ -585,16 +571,3 @@ body {
     width: 22px;
     height: 22px;
 }
-
-
-@media screen and (max-width: 768px) {
-    .hero-left, .hero-right, .sidebar-left, .content-center, .sidebar-right {
-        width: 100% !important;
-    }
-    .feature-col:not(:last-child) {
-        border-right: none;
-        border-bottom: 1px solid #dcdcdc;
-        padding-bottom: 10px;
-        margin-bottom: 10px;
-    }
-                                }
