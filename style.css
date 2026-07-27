@@ -1,4 +1,4 @@
-/* --- 1. CORE RESET & PAGE CONTAINER --- */
+
 * {
     margin: 0;
     padding: 0;
@@ -11,12 +11,11 @@ body {
     display: flex;
     justify-content: center;
     padding: 20px 0;
-    overflow-x: hidden; /* Mobile par horizontal scroll rokne ke liye */
+    overflow-x: hidden;
 }
 
 .site-wrapper {
     width: 960px;
-    max-width: 100%; /* Mobile par stretch hone se bachane ke liye */
     background-color: #ffffff;
     box-shadow: 0 0 12px rgba(0, 0, 0, 0.4);
     border: 1px solid #aaa;
@@ -29,12 +28,10 @@ body {
     justify-content: space-between;
     align-items: flex-end;
     padding: 5px 0 15px 0;
-    flex-wrap: wrap;
 }
 
 .main-logo {
     height: 72px;
-    max-width: 100%;
     object-fit: contain;
 }
 
@@ -54,7 +51,6 @@ body {
     border-bottom: 2px solid #8b0000;
     padding-bottom: 2px;
     margin-bottom: 2px;
-    width: fit-content;
 }
 
 .call-number {
@@ -86,7 +82,6 @@ body {
 .nav-links {
     display: flex;
     list-style: none;
-    flex-wrap: wrap;
 }
 
 .nav-links li a {
@@ -110,12 +105,10 @@ body {
     justify-content: space-between;
     margin-top: 15px;
     gap: 15px;
-    flex-wrap: wrap;
 }
 
 .hero-left {
     width: 485px;
-    max-width: 100%;
 }
 
 .hero-banner-img {
@@ -128,12 +121,10 @@ body {
 
 .hero-right {
     width: 430px;
-    max-width: 100%;
     background: #e8e8e8 linear-gradient(to bottom, #f4f4f4 0%, #d8d8d8 100%);
     border: 1px solid #b5b5b5;
     box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
     position: relative;
-    padding: 0;
 }
 
 .form-header {
@@ -221,7 +212,6 @@ body {
 
 .form-row input {
     width: 135px;
-    max-width: 100%;
     padding: 2px 5px;
     border: 1px solid #999;
     background-color: #fff;
@@ -246,15 +236,6 @@ body {
     justify-content: space-between;
     align-items: center;
     margin-top: 6px;
-    width: 100%;
-    flex-wrap: wrap;
-    gap: 5px;
-}
-
-.question-form .btn-red {
-    margin-left: auto;
-    padding: 3px 8px;
-    font-size: 0.72rem;
 }
 
 .guarantee-text {
@@ -285,18 +266,15 @@ body {
     padding: 3px 8px;
 }
 
-/* --- 5. MIDDLE 3-COLUMN SECTION --- */
 .middle-features {
     display: flex;
     justify-content: space-between;
     margin-top: 18px;
     gap: 15px;
-    flex-wrap: wrap;
 }
 
 .feature-col {
     flex: 1;
-    min-width: 250px;
     padding: 0 8px;
 }
 
@@ -439,12 +417,10 @@ body {
     display: flex;
     justify-content: space-between;
     gap: 15px;
-    flex-wrap: wrap;
 }
 
 .sidebar-left {
     width: 195px;
-    max-width: 100%;
 }
 
 .side-title {
@@ -517,7 +493,6 @@ body {
 
 .content-center {
     flex: 1;
-    min-width: 250px;
     padding: 0 5px;
 }
 
@@ -538,7 +513,6 @@ body {
 
 .sidebar-right {
     width: 175px;
-    max-width: 100%;
 }
 
 .right-block {
@@ -596,23 +570,22 @@ body {
     height: 22px;
 }
 
-/* --- MEDIA QUERY FOR RESPONSIVE (NO HORIZONTAL SCROLL) --- */
-@media (max-width: 768px) {
+@media screen and (max-width: 980px) {
     body {
         padding: 0;
+        background-color: #ffffff;
     }
     .site-wrapper {
+        width: 960px;
         border: none;
         box-shadow: none;
-        padding: 8px;
+        padding: 10px;
+        transform-origin: top left;
+        transform: scale(calc(100vw / 980));
     }
-    .hero-left, .hero-right, .sidebar-left, .content-center, .sidebar-right {
-        width: 100% !important;
+    html, body {
+        overflow-x: hidden;
+        width: 100vw;
     }
-    .feature-col:not(:last-child) {
-        border-right: none;
-        border-bottom: 1px solid #dcdcdc;
-        padding-bottom: 10px;
-        margin-bottom: 10px;
     }
-}
+        
