@@ -6,18 +6,20 @@
 }
 
 body {
-    background-color: #6e6e6e;
-    display: flex;
-    justify-content: center;
-    padding: 20px 0;
+    background-color: #ffffff;
+    margin: 0;
+    padding: 0;
+    width: 100%;
 }
 
 .site-wrapper {
-    width: 960px;
+    width: 100%;
+    max-width: 100%;
     background-color: #ffffff;
-    box-shadow: 0 0 12px rgba(0, 0, 0, 0.4);
-    border: 1px solid #aaa;
-    padding: 12px 15px 25px 15px;
+    border: none;
+    box-shadow: none;
+    padding: 12px 25px 25px 25px;
+    margin: 0;
 }
 
 .header {
@@ -48,6 +50,7 @@ body {
     border-bottom: 2px solid #8b0000;
     padding-bottom: 2px;
     margin-bottom: 2px;
+    width: fit-content;
 }
 
 .call-number {
@@ -103,7 +106,7 @@ body {
 }
 
 .hero-left {
-    width: 485px;
+    flex: 1;
 }
 
 .hero-banner-img {
@@ -111,27 +114,28 @@ body {
     height: auto;
     display: block;
     border: 1px solid #777;
-    box-shadow: 2px 2px 5px rgba(0,0,0,0.25);
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.25);
 }
 
 .hero-right {
     width: 430px;
-    background: linear-gradient(rgba(245, 245, 245, 0.85), rgba(220, 220, 220, 0.85)), url('form_bg.jpg');
+    background: #e8e8e8 url('images/form_bg.jpg') no-repeat bottom center;
     background-size: cover;
-    background-position: center;
     border: 1px solid #b5b5b5;
-    box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
     position: relative;
+    padding: 0;
 }
 
 .form-header {
     display: flex;
     align-items: center;
     position: relative;
-    padding-left: 155px; 
-    padding-top: 6px;
-    padding-bottom: 6px;
-    min-height: 42px;
+    padding-left: 145px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    min-height: 44px;
+    border-bottom: 1px solid #d0d0d0;
 }
 
 .q-box {
@@ -141,27 +145,30 @@ body {
     background-color: #8b0000;
     color: #ffffff;
     font-weight: bold;
-    padding: 7px 12px;
-    font-size: 1.1rem;
+    padding: 9px 12px;
+    font-size: 1.05rem;
     letter-spacing: 0.5px;
     line-height: 1;
+    height: 100%;
+    display: flex;
+    align-items: center;
     z-index: 2;
 }
 
 .q-title {
     color: #333;
-    font-size: 0.95rem;
-    line-height: 1.15;
+    font-size: 0.9rem;
+    line-height: 1.2;
     margin-left: 5px;
 }
 
 .q-title strong {
     color: #1a3c6e;
-    font-size: 1.15rem;
+    font-size: 1.1rem;
 }
 
 .q-title small {
-    font-size: 0.78rem;
+    font-size: 0.75rem;
     color: #555;
 }
 
@@ -170,7 +177,7 @@ body {
 }
 
 .form-sub {
-    font-size: 0.71rem;
+    font-size: 0.7rem;
     color: #333;
     line-height: 1.25;
     margin-bottom: 8px;
@@ -182,9 +189,9 @@ body {
 
 .confidential-stamp {
     position: absolute;
-    right: 10px;
-    top: -5px;
-    width: 140px;
+    right: 8px;
+    top: 20px;
+    width: 135px;
     transform: rotate(8deg);
     z-index: 10;
     pointer-events: none;
@@ -198,26 +205,26 @@ body {
 .form-row {
     display: flex;
     align-items: center;
-    margin-bottom: 4px;
+    margin-bottom: 5px;
 }
 
 .form-row label {
-    width: 52px;
+    width: 50px;
     font-size: 0.68rem;
     font-weight: bold;
     color: #333;
 }
 
 .form-row input {
-    width: 135px;
-    padding: 2px 5px;
+    width: 140px;
+    padding: 2px 6px;
     border: 1px solid #999;
     background-color: #fff;
     height: 22px;
 }
 
 .form-row.text-row {
-    margin-top: 4px;
+    margin-top: 5px;
 }
 
 .form-row textarea {
@@ -234,6 +241,13 @@ body {
     justify-content: space-between;
     align-items: center;
     margin-top: 6px;
+    width: 100%;
+}
+
+.question-form .btn-red {
+    margin-left: auto;
+    padding: 3px 8px;
+    font-size: 0.72rem;
 }
 
 .guarantee-text {
@@ -251,7 +265,7 @@ body {
     padding: 4px 10px;
     cursor: pointer;
     display: inline-block;
-    box-shadow: 0 1px 2px rgba(0,0,0,0.3);
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
     font-size: 0.72rem;
 }
 
@@ -264,16 +278,19 @@ body {
     padding: 3px 8px;
 }
 
+/* --- MIDDLE 3-COLUMN SECTION --- */
 .middle-features {
     display: flex;
     justify-content: space-between;
     margin-top: 18px;
-    gap: 15px;
+    gap: 12px;
+    padding-bottom: 12px;
+    border-bottom: 1px solid #dcdcdc;
 }
 
 .feature-col {
     flex: 1;
-    padding: 0 8px;
+    padding: 0 10px;
 }
 
 .feature-col:not(:last-child) {
@@ -305,7 +322,7 @@ body {
 .col-1 .col-content {
     display: flex;
     align-items: flex-start;
-    gap: 8px;
+    gap: 10px;
     margin-bottom: 8px;
 }
 
@@ -321,7 +338,7 @@ body {
 }
 
 .col-1 .feature-img {
-    width: 65px;
+    width: 82px;
     height: auto;
     object-fit: contain;
 }
@@ -335,18 +352,18 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-bottom: 8px;
+    padding-bottom: 6px;
+    gap: 8px;
 }
 
 .col-2 .border-top-dash {
     border-top: 1px dashed #ccc;
-    padding-top: 8px;
-    margin-top: 6px;
+    padding-top: 6px;
+    margin-top: 4px;
 }
 
 .col-2 .text-side {
     flex: 1;
-    padding-right: 6px;
 }
 
 .col-2 p {
@@ -357,7 +374,7 @@ body {
 }
 
 .col-2 .sub-img {
-    width: 75px; 
+    width: 95px;
     height: auto;
     object-fit: contain;
 }
@@ -373,12 +390,12 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 10px;
+    gap: 12px;
     margin-bottom: 8px;
 }
 
 .col-3 .badges-row img {
-    height: 60px;
+    height: 72px;
     width: auto;
 }
 
@@ -447,7 +464,7 @@ body {
     font-weight: bold;
     padding: 6px 8px;
     border-radius: 2px;
-    box-shadow: 1px 1px 2px rgba(0,0,0,0.3);
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
     border: 1px solid #333;
     border-left: 4px solid #8b0000;
 }
@@ -529,9 +546,9 @@ body {
 }
 
 .right-block p {
-    margin: 2px 0 5px 0;
     font-size: 0.68rem;
     color: #555;
+    margin: 2px 0 5px 0;
     line-height: 1.2;
 }
 
@@ -544,7 +561,12 @@ body {
 }
 
 .side-badge {
-    width: 85px;
+    width: 105px;
+}
+
+.social-block {
+    text-align: right;
+    margin-top: 15px;
 }
 
 .social-block h3 {
@@ -559,6 +581,7 @@ body {
 
 .social-icons {
     display: flex;
+    justify-content: flex-end;
     gap: 4px;
 }
 
@@ -566,23 +589,3 @@ body {
     width: 22px;
     height: 22px;
 }
-
-@media screen and (max-width: 980px) {
-    body {
-        background-color: #ffffff;
-        padding: 0;
-        margin: 0;
-        overflow-x: hidden;
-    }
-    
-    .site-wrapper {
-        width: 960px;
-        border: none;
-        box-shadow: none;
-        padding: 10px 15px;
-        transform-origin: top left;
-        transform: scale(calc(100vw / 980));
-        margin-bottom: -550px;
-    }
-    }
-
